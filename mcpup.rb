@@ -5,21 +5,21 @@
 class Mcpup < Formula
   desc "Manage MCP server configs across AI clients from one place"
   homepage "https://github.com/mohammedsamin/mcpup"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mohammedsamin/mcpup/releases/download/v0.1.0/mcpup_0.1.0_darwin_amd64.tar.gz"
-      sha256 "823dcc3b647f055c52f0dfd21bdab6a0e31fa3bd66becd5f117137e71de8159a"
+      url "https://github.com/mohammedsamin/mcpup/releases/download/v0.2.0/mcpup_0.2.0_darwin_amd64.tar.gz"
+      sha256 "7c4234fc3d23eccfbcca487d0f8d52c5beaea4fc87fe57b7bcd991128fb82ab8"
 
       define_method(:install) do
         bin.install "mcpup"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mohammedsamin/mcpup/releases/download/v0.1.0/mcpup_0.1.0_darwin_arm64.tar.gz"
-      sha256 "1cb03aea9c8e20026761f3fef7929b7d7da1fa196151fd88e0e773788927040b"
+      url "https://github.com/mohammedsamin/mcpup/releases/download/v0.2.0/mcpup_0.2.0_darwin_arm64.tar.gz"
+      sha256 "0cff24667841cc386cc11d13beb86de9cd261edc631f424c01b55c65eecab977"
 
       define_method(:install) do
         bin.install "mcpup"
@@ -29,15 +29,15 @@ class Mcpup < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mohammedsamin/mcpup/releases/download/v0.1.0/mcpup_0.1.0_linux_amd64.tar.gz"
-      sha256 "67ff201f70ceda5ca2fd8676a88443ab9f610d10030c6f4f3e1b7b9c1b93dd11"
+      url "https://github.com/mohammedsamin/mcpup/releases/download/v0.2.0/mcpup_0.2.0_linux_amd64.tar.gz"
+      sha256 "38cc1806f04b8d4dd8f4fc48bd90395ba44643b7b1dbffded60434bf54c9108e"
       define_method(:install) do
         bin.install "mcpup"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mohammedsamin/mcpup/releases/download/v0.1.0/mcpup_0.1.0_linux_arm64.tar.gz"
-      sha256 "7b2cf05ff7ee0f3109c489a23bcbd776c3bbcc77c2a2c47c9602ef7f736e214e"
+      url "https://github.com/mohammedsamin/mcpup/releases/download/v0.2.0/mcpup_0.2.0_linux_arm64.tar.gz"
+      sha256 "93aa23b45512b26f0c40244ebb160469c2be34ddf570760313ef8d6dca2df806"
       define_method(:install) do
         bin.install "mcpup"
       end
